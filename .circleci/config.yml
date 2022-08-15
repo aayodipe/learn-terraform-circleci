@@ -10,8 +10,9 @@ jobs:
       command: |
         terraform init -input=false
         terraform plan -out tfapply -var-file terraform.tfvars
-        terraform apply --auto-approve
-        terraform destroy --auto-approve tfapply
+        terraform apply --auto-approve tfapply
+        terraform destroy --auto-approve 
+         
 workflows:
  deployment: 
   jobs:
