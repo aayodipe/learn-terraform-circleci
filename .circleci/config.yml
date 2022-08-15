@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
- deploy:
+ build:
   docker:
    - image: hashicorp/terraform:latest
   steps:
@@ -13,4 +13,11 @@ jobs:
         terraform apply -var-file=tfapply --auto-approve
 
      
-   
+workflows:
+ pull_request:
+  jobs:
+   - validate:
+      filers:
+       branches:
+        ignore:
+         -master
