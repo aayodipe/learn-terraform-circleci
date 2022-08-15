@@ -14,10 +14,6 @@ jobs:
 
      
 workflows:
- pull_request:
   jobs:
    - validate:
-      filers:
-       branches:
-        ignore:
-         -master
+ 
