@@ -6,11 +6,11 @@ jobs:
   steps:
    - checkout
    - run 
-    name:  checkout the code and run terraform plan
-    command: |
-     terraform init -input=false
-     terraform plan -out tfapply -var-file terraform.tfvars
-     terraform apply -var-file=tfapply --auto-approve
+      name:  checkout the code and run terraform plan
+      command: |
+        terraform init -input=false
+        terraform plan -out tfapply -var-file terraform.tfvars
+        terraform apply -var-file=tfapply --auto-approve
 
      
    
