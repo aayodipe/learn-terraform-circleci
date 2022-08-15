@@ -11,8 +11,7 @@ jobs:
         terraform init -input=false
         terraform plan -var-file terraform.tfvars
         terraform apply --auto-approve 
-        terraform destroy --auto-approve 
-         
+            
 workflows:
  deployment: 
   jobs:
