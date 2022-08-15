@@ -10,9 +10,6 @@ jobs:
       command: |
         terraform init -input=false
 workflows:
+ deployment: 
   jobs:
-   - validate:
-      filers:
-       branches:
-        ignore:
-         -master
+   - build
