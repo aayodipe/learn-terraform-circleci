@@ -8,7 +8,7 @@ jobs:
    - run:
       name: checkout the code and run terraform plan
       command:
-        terraform fmt
+        terraform fmt main.tf
         terraform validate
  provision:
   docker:
