@@ -9,7 +9,6 @@ jobs:
       name: checkout the code and run terraform plan
       command:
         terraform init
-        terraform validate
  provision:
   docker:
    - image: hashicorp/terraform:latest
