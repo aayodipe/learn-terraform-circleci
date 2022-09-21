@@ -16,7 +16,7 @@ jobs:
   steps:
    - checkout
    - run:
-      name: checkout the code and run terraform plan
+      name: checkout the code and run terraform pla
       command:
         terraform init -input=false
         terraform plan -var-file terraform.tfvars
