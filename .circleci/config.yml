@@ -8,7 +8,7 @@ jobs:
    - run:
       name: checkout the code and run terraform plan
       command:
-        terraform fmt -recursive -check
+        # terraform fmt -recursive -check
         terraform validate
  provision:
   docker:
