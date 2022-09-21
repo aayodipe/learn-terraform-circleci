@@ -15,10 +15,10 @@ jobs:
   steps:
    - checkout
    - run:
-      name: checkout the code and run terraform pla
+      name: checkout the code and run terraform 
       command: |
         terraform plan -out tfapply -var-file terraform.tfvars
-        terraform apply -auto-approve tfapply
+        terraform apply tfapply -auto-approve
 workflows:
  deployment: 
   jobs:
