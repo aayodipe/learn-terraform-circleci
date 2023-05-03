@@ -10,7 +10,7 @@ pipleline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                git branch: 'main', credentialsId: '8e6d2168-cf0f-4349-bbf2-be116fadc89d', url: ''
             }
         }
         stage('Terraform Fmt') {
