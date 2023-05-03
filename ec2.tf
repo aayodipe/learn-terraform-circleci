@@ -4,7 +4,7 @@ resource "aws_instance" "main" {
   count         = 2
   
   tags = {
-    Name = "IaC-Test"
+    Name = "web server"
     Env = "dev"
   }
 }
