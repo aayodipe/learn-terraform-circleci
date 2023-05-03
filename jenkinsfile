@@ -10,7 +10,7 @@ pipleline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: '8e6d2168-cf0f-4349-bbf2-be116fadc89d', url: ''
+                git branch: 'main', credentialsId: '8e6d2168-cf0f-4349-bbf2-be116fadc89d', url: 'https://github.com/aayodipe/learn-terraform-circleci'
             }
         }
         stage('Terraform Fmt') {
